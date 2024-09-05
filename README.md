@@ -17,3 +17,14 @@ I hope you enjoy it and look forward to playing our game once it's released!
 If you have a video of a space game, movie, or anything else with lots of bullets,  
 feel free to share it with us by creating an issue :)  
 https://github.com/EloiStree/HelloBulletsHell/issues
+
+
+
+My goal is to create a massive multiplayer game in a single lobby, supporting thousands of players. To achieve this at a "low cost" on the server, I have a few potential solutions:
+
+- Players will only interact using integer-based commands.
+- Players will have a limited bandwidth for information requests (beyond what's necessary for bullet management).
+- The bullet engine will only handle the creation and destruction of bullets over the network.
+- Paying players can host a broadcaster, allowing them to play in groups of 5-300 players, from LAN connections to the main server.
+- It's up to AI or custom code to predict player positions based on bullet sources.
+- In future versions, we may allow subscription users to play as human characters, utilizing network LOD (Level of Detail) to manage player positions efficiently.
